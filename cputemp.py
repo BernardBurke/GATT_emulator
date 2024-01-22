@@ -33,11 +33,11 @@ NOTIFY_TIMEOUT = 5000
 class ThermometerAdvertisement(Advertisement):
     def __init__(self, index):
         Advertisement.__init__(self, index, "peripheral")
-        self.add_local_name("Thermometer")
+        self.add_local_name("Examin Handset Sensor")
         self.include_tx_power = True
 
 class ThermometerService(Service):
-    THERMOMETER_SVC_UUID = "00000001-710e-4a5b-8d75-3e5b444bc3cf"
+    THERMOMETER_SVC_UUID = "ba65b745-f9f7-4873-9289-bb93564909f3"
 
     def __init__(self, index):
         self.farenheit = True
